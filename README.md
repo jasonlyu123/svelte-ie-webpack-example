@@ -1,4 +1,4 @@
-# hello-world-svelte-ie
+# svelte-ie-webpack-example 
 Wepack config example of polyfill and transpile needed for svelte to support IE 11
 
 ## polyfill: 
