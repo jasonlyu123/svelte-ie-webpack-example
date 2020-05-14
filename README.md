@@ -1,5 +1,5 @@
 # svelte-ie-webpack-example 
-Wepack config example of polyfill and transpile needed for svelte to support IE 11
+Webpack config example of polyfill and transpile needed for svelte to support IE 11
 
 ## polyfill: 
 1. [core-js](https://github.com/zloirock/core-js)
@@ -9,8 +9,8 @@ Wepack config example of polyfill and transpile needed for svelte to support IE 
 ## transpile
 1. setup [babel](https://babeljs.io/setup) and babel-loader (webpack)
 2. setup babel-loader to exclude node_module but include svelte
-   1. if you're using windows, the regex needed to be windows-style(`\`). 
+   1. if you're using windows, the regex of path needed to be windows-style(`\`). 
    2. The `test` property of babel-loader must be changed to include `.mjs` (`/\.m?js$/`) because svelte's runtime use `.mjs` extension.
-   3. don't tranpile `core-js`. if you tranpile it, polyfill won't work.
+   3. don't transpile `core-js`. if you transpile it, polyfill won't work.
 3. setup babel-loader to transpile svelte file. Noted in the `use` property `svelte-loader` must be after `babel-loader`, 
-  so that `svelte-loader` would execute first
+  so that `svelte-loader` would execute first.
